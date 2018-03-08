@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production src/blockies.js",
-    "example": "webpack --config=src/example/webpack.config.js"
+    "example": "webpack --config=src/example/webpack.config.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
