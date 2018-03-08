@@ -1,0 +1,30 @@
+{
+  "name": "ethereum-blockies-base64",
+  "version": "1.0.0",
+  "description": "A tiny library for generating base64 encoded PNG blocky identicons.",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production src/blockies.js",
+    "example": "webpack --config=src/example/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyCryptoHQ/ethereum-blockies-base64.git"
+  },
+  "author": "MyCrypto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MyCryptoHQ/ethereum-blockies-base64/issues"
+  },
+  "homepage": "https://github.com/MyCryptoHQ/ethereum-blockies-base64#readme",
+  "dependencies": {
+    "pnglib": "0.0.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "3.0.6",
+    "rollup": "0.56.5",
+    "webpack": "4.1.1",
+    "webpack-cli": "2.0.10"
+  }
+}
