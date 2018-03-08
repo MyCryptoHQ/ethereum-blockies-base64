@@ -1,36 +1,51 @@
-Blockies
-========
+# Ethereum Blockies Base64
 
-A tiny library for generating blocky identicons.
+A tiny library for generating blocky identicons as base64 encoded PNGs.
 
-![Sample blockies image](sample.png "Blockies")
+![Sample of generated blockies](sample.png "Blockies")
 
-[**Demo page**](http://download13.github.io/blockies/)
+[**See a live demo of it in action**](http://wbobeirne.github.io/ethereum-blockies-base64/)
 
-Use
----
+## Install
+
+```
+# NPM
+npm install --save ethereum-blockies-base64
+
+# Yarn
+yarn add ethereum-blockies-base64
+```
+
+## Use
+
+### Vanilla JS
 
 ```javascript
-import {toDataUrl} from 'blockies';
+import makeBlockie from 'ethereum-blockies-base64';
 
 const img = new Image() ;
-img.src = blockies.toDataUrl('0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8');
+img.src = makeBlockie('0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8');
 
 document.body.appendChild(img);
 ```
 
+### React
 
-Goals
------
+```javascript
+import React from 'react';
+import makeBlockie from 'ethereum-blockies-base64';
 
-No DOM dependencies, same rendering result as MEW v3.
+class Blockie extends React.Component {
+  render() {
+    return <img src={makeBlockie(this.props.address)}/>
+  }
+}
+```
 
-Non Goals
----
+Note: In a real setting, we recommend saving to state and re-making the blockie on prop change for better re-render performance.
 
-Speed. Size.
 
 License
 -------
 
-[WTFPL](http://www.wtfpl.net/)
+[MIT](https://opensource.org/licenses/MIT)
