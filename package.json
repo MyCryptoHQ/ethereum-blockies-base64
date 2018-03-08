@@ -1,5 +1,5 @@
 {
-  "name": "ethereum-blockies-base64",
+  "name": "@wbobeirne/ethereum-blockies-base64",
   "version": "1.0.0",
   "description": "A tiny library for generating base64 encoded PNG blocky identicons.",
   "main": "./dist/main.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MyCryptoHQ/ethereum-blockies-base64.git"
+    "url": "git+https://github.com/wbobeirne/ethereum-blockies-base64.git"
   },
   "author": "MyCrypto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MyCryptoHQ/ethereum-blockies-base64/issues"
+    "url": "https://github.com/wbobeirne/ethereum-blockies-base64/issues"
   },
-  "homepage": "https://github.com/MyCryptoHQ/ethereum-blockies-base64#readme",
+  "homepage": "https://github.com/wbobeirne/ethereum-blockies-base64#readme",
   "dependencies": {
     "pnglib": "0.0.1"
   },
