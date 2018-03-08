@@ -1,11 +1,11 @@
 {
   "name": "ethereum-blockies-base64-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tiny library for generating base64 encoded PNG blocky identicons.",
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production src/blockies.js",
+    "build": "webpack --mode=production src/blockies.js --output-library-target=umd",
     "example": "webpack --config=src/example/webpack.config.js",
     "prepublish": "npm run build"
   },
