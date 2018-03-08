@@ -9,7 +9,9 @@ module.exports = {
   output: {
     path: path.resolve(rootDir, 'example'),
     filename: 'script.js',
-    publicPath: './'
+    publicPath: './',
+    library: 'ethereum-blockies-base64',
+    libraryTarget: 'umd'
   },
   plugins: [
     new HtmlWebpackPlugin({
