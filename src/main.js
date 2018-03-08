@@ -73,7 +73,7 @@ function fillRect(png, x, y, w, h, color) {
 
 function buildOpts(opts) {
   if (!opts.seed) {
-   throw 'No seed provided'
+    throw new Error('No seed provided');
   }
 
   seedrand(opts.seed);
@@ -88,15 +88,15 @@ function buildOpts(opts) {
 }
 
 function makeBlockie(address) {
-  const opts = buildOpts({seed: address.toLowerCase()});
+  const opts = buildOpts({ seed: address.toLowerCase() });
 
   const imageData = createImageData(opts.size);
   const width = Math.sqrt(imageData.length);
 
-  const p = new pnglib(opts.size*opts.scale, opts.size*opts.scale, 3)
-  const bgcolor = p.color(...hsl2rgb(...opts.bgcolor))
-  const color = p.color(...hsl2rgb(...opts.color))
-  const spotcolor = p.color(...hsl2rgb(...opts.spotcolor))
+  const p = new pnglib(opts.size * opts.scale, opts.size * opts.scale, 3);
+  const bgcolor = p.color(...hsl2rgb(...opts.bgcolor));
+  const color = p.color(...hsl2rgb(...opts.color));
+  const spotcolor = p.color(...hsl2rgb(...opts.spotcolor));
 
   for (let i = 0; i < imageData.length; i++) {
     const row = Math.floor(i / width);

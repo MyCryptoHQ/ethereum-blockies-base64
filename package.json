@@ -5,8 +5,8 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production src/blockies.js --output-library-target=umd",
-    "example": "webpack --config=src/example/webpack.config.js",
+    "build": "webpack --config=webpack.config.js",
+    "example": "npm run build && webpack --config=webpack.example.config.js",
     "prepublish": "npm run build"
   },
   "repository": {

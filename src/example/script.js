@@ -1,7 +1,5 @@
-const makeBlockie = require('../blockies');
+const makeBlockie = require('../../dist/main');
 const addresses = require('./testAddresses.json');
-
-console.log(makeBlockie);
 
 const container = document.getElementById('icons');
 for (i = 0; i < addresses.length; i++) {
