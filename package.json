@@ -1,6 +1,6 @@
 {
   "name": "ethereum-blockies-base64-test",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A tiny library for generating base64 encoded PNG blocky identicons.",
   "main": "./dist/main.js",
   "scripts": {
