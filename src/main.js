@@ -1,4 +1,4 @@
-const pnglib = require('pnglib');
+const pnglib = require('./pnglib');
 const hsl2rgb = require('./hsl2rgb');
 
 // The random number is a js implementation of the Xorshift PRNG
@@ -33,7 +33,7 @@ function createColor() {
   //lightness can be anything from 0 to 100, but probabilities are a bell curve around 50%
   const l = (rand() + rand() + rand() + rand()) * 25 ;
 
-  return [h / 360,s / 100,l / 100];
+  return [h / 360, s / 100, l / 100];
 }
 
 function createImageData(size) {

@@ -5,7 +5,6 @@ const rootDir = path.resolve(__dirname);
 
 module.exports = {
   mode: 'production',
-  devtool: 'source-map',
   entry: path.resolve(rootDir, 'src/example/script.js'),
   output: {
     path: path.resolve(rootDir, 'example'),
