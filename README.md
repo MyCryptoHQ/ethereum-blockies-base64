@@ -4,7 +4,7 @@ A tiny library for generating blocky identicons as base64 encoded PNGs.
 
 ![Sample of generated blockies](sample.png "Blockies")
 
-[**See a live demo of it in action**](http://wbobeirne.github.io/ethereum-blockies-base64/)
+[**See a live demo of it in action**](https://mycryptohq.github.io/ethereum-blockies-base64/)
 
 ## Install
 
