@@ -1,2 +1,3 @@
-declare function makeBlockie(data: string): string;
-export default makeBlockie;
+declare module 'ethereum-blockies-base64' {
+  export default function makeBlockie(address: string): string;
+}
