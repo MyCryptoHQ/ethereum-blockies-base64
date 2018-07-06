@@ -203,8 +203,6 @@ module.exports = function(width,height,depth) {
         crc32(this.buffer, this.iend_offs, this.iend_size);
 
         // convert PNG to string
-        // wbobeirne: Use eval to avoid uglification. This hurt to write.
-        eval('var pngHeader = "\\x89PNG\\r\\n\\x1a\\n";');
-        return pngHeader+this.buffer.join('');
+        return "\x89PNG\r\n\x1a\n" + this.buffer.join('');
     }
 };
